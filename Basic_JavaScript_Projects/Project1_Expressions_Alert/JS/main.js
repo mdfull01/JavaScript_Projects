@@ -15,3 +15,7 @@ var appetizer=appetizer.fontcolor("red");
 var drink=drink.fontcolor("blue");
 document.write(appetizer);
 document.write(3+3);
+
+function displayDate() {
+    document.getElementById("demo").innerHTML=Date();
+}
