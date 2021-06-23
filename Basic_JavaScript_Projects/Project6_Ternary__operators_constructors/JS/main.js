@@ -13,11 +13,14 @@ function ride_Function() { //Create a function to receive user input and determi
 }
 
 //This code creates a counter function to show how many times the ride_Function has been called using nested anonymous functions
+
+function counter_Function (){ //Create counter_function 
+    
 const plus = (function () { //Declare variable "plus" and an anonymous function so it will immediately self invoke
     let counter = 0; //Self invoking function setting the counter to zero, only runs once
     return function () {counter += 1; return counter;} //Anonymous inner function that has access to to the variable counter from the outer function   
-})(); //Counter can only be changed using "plus" (which now acts as a function) because of the local scope 
-    function counter_Function (){ //Create counter_function
-    document.getElementById("counter").innerHTML = plus(); //Replace element with Id "Counter" with current value of "plus"
-}
+}()); //Counter can only be changed using "plus" (which now acts as a function) because of the local scope 
 
+
+document.getElementById("test").innerHTML = plus(); //Replace element with Id "Counter" with current value of "plus"  
+}
