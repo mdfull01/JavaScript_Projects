@@ -46,5 +46,5 @@ function check_Age() { //Declare check_Age function
     else { //Else statement evaluating age input from user
         answer = "You are currently eligible for any covid 19 vaccine."; //Sets the value of the answer variable to the desired text output
     }
-    document.getElementById("results").innerHTML = answer; //Locate the element with id = results and replace its contents with the value of the variable answer
+    document.getElementById("results").innerHTML = answer; //Locate the element with id = results and replace its contents with the value of the variable answer 
 }
